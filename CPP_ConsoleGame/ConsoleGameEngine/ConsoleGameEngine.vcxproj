@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConsoleMath.h" />
     <ClInclude Include="EngineDebug.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConsoleMath.cpp" />
     <ClCompile Include="EngineDebug.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
