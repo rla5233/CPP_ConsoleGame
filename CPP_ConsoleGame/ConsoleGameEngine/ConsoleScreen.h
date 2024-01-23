@@ -1,6 +1,5 @@
 #pragma once
 
-#include <iostream>
 #include <vector>
 
 #include "EngineDebug.h"
@@ -11,6 +10,12 @@ class ConsoleScreen
 public:
 	ConsoleScreen();
 	virtual ~ConsoleScreen();
+
+	// delete Function
+	ConsoleScreen(const ConsoleScreen& _Other) = delete;
+	ConsoleScreen(ConsoleScreen&& _Other) noexcept = delete;
+	ConsoleScreen& operator=(const ConsoleScreen& _Other) = delete;
+	ConsoleScreen& operator=(ConsoleScreen&& _Other) noexcept = delete;
 
 	void CreateScreen(int _ScreenX, int _ScreenY);
 	void ReleaseScreen();

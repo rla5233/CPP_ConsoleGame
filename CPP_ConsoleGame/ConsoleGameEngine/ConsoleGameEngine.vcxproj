@@ -22,6 +22,10 @@
     <ClInclude Include="ConsoleMath.h" />
     <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="ConsoleScreen.h" />
+    <ClInclude Include="ConsoleUpdater.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="EngineCore.h" />
     <ClInclude Include="EngineDebug.h" />
   </ItemGroup>
@@ -29,6 +33,10 @@
     <ClCompile Include="ConsoleMath.cpp" />
     <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="ConsoleUpdater.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="EngineCore.cpp" />
     <ClCompile Include="EngineDebug.cpp" />
   </ItemGroup>
