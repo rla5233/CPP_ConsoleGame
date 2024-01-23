@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <vector>
 
 #include "EngineDebug.h"
@@ -12,13 +13,13 @@ public:
 	virtual ~ConsoleScreen();
 
 	void CreateScreen(int _ScreenX, int _ScreenY);
-	void ReleaseScreen() const;
-	void PrintScreen() const;
-	void ClearScreen() const;
+	void ReleaseScreen();
+	void PrintScreen();
+	void ClearScreen();
 
-	void SetChar(const class ConsoleObject& _Object) const;
-	void SetChar(const class ConsoleObject* _Object) const;
-	void SetChar(const Point _Pos, char _Char) const;
+	void SetChar(const class ConsoleObject& _Object);
+	void SetChar(const class ConsoleObject* _Object);
+	void SetChar(const Point _Pos, wchar_t _Char);
 
 	inline int GetScreenX() const
 	{
@@ -36,6 +37,6 @@ private:
 	int ScreenX = -1;
 	int ScreenY = -1;
 
-	std::vector<std::vector<const char*>> ScreenData;
+	std::vector<std::vector<wchar_t>> ScreenData;
 };
 
