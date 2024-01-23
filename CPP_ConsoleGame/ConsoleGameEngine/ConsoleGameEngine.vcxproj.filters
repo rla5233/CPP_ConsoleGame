@@ -3,9 +3,15 @@
   <ItemGroup>
     <ClInclude Include="EngineDebug.h" />
     <ClInclude Include="ConsoleMath.h" />
+    <ClInclude Include="EngineCore.h" />
+    <ClInclude Include="ConsoleScreen.h" />
+    <ClInclude Include="ConsoleObject.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EngineDebug.cpp" />
     <ClCompile Include="ConsoleMath.cpp" />
+    <ClCompile Include="EngineCore.cpp" />
+    <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="ConsoleObject.cpp" />
   </ItemGroup>
 </Project>

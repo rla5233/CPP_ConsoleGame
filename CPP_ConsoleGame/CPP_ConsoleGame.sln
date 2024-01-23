@@ -5,8 +5,6 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{1F7C3AF7-553D-4F57-8B1B-A57BA1338E27}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{3EC1B75B-A81E-4DA1-B0D1-C84382C6A023}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleGameEngine", "ConsoleGameEngine\ConsoleGameEngine.vcxproj", "{F37F9EE7-4741-4620-8D7C-9D6A21F2E45E}"
 EndProject
 Global
