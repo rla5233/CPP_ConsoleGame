@@ -1,17 +1,10 @@
-#include <ConsoleGameEngine/ConsoleScreen.h>
-#include <ConsoleGameEngine/EngineDebug.h>
+#include <ConsoleGameEngine/EngineCore.h>
 
 int main()
 {
-	EngineDebug:LeakCheak;
-	ConsoleScreen NewScreen;
-
-	NewScreen.CreateScreen(20, 20);
-	while (true)
-	{
-		NewScreen.PrintScreen();
-	}
-
+	EngineCore EngineCore;
+	EngineCore.Init({ 20, 20 });
+	EngineCore.EngineStart();
 
 	return 0;
 }
