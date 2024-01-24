@@ -29,6 +29,12 @@ public:
 	{
 		return X != _Other.X || Y == _Other.Y;
 	}
+
+	void operator+=(const Point& _Other)
+	{
+		X += _Other.X;
+		Y += _Other.Y;
+	}
 	
 };
 

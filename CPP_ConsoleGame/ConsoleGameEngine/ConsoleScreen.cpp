@@ -1,5 +1,6 @@
 #include "ConsoleScreen.h"
 
+#include <iostream>
 #include "ConsoleObject.h"
 
 ConsoleScreen::ConsoleScreen()
@@ -42,7 +43,7 @@ void ConsoleScreen::CreateScreen(int _ScreenX, int _ScreenY)
 	
 	for (int y = 0; y < ScreenY; y++)
 	{
-		ScreenData[y].resize(ScreenX + 2);
+		ScreenData[y].resize(ScreenX);
 
 		if (0 == ScreenData[y].size())
 		{
@@ -64,12 +65,11 @@ void ConsoleScreen::PrintScreen()
 
 	for (int y = 0; y < ScreenY; y++)
 	{
-		if (0 == ScreenData[y].size())
+		for (int x = 0; x < ScreenX; x++)
 		{
-			MsgBoxAssert("PrintScreen Error : Print Not Exist Line");
+			std::cout << ScreenData[y][x];
 		}
-
-		wprintf_s(&ScreenData[y][0]);
+		std::cout << std::endl;
 	}
 
 	ClearScreen();
@@ -82,8 +82,7 @@ void ConsoleScreen::ClearScreen()
 		for (int x = 0; x < ScreenX; x++)
 		{
 			ScreenData[y][x] = '*';
-		}
-		ScreenData[y][ScreenX] = '\n';
+		}		
 	}
 }
 
@@ -97,7 +96,7 @@ void ConsoleScreen::SetChar(const ConsoleObject* _Object)
 
 }
 
-void ConsoleScreen::SetChar(const Point _Pos, wchar_t _Char)
+void ConsoleScreen::SetChar(const Point _Pos, char _Char)
 {
 	if (0 > _Pos.X || 0 > _Pos.Y || ScreenX <= _Pos.X || ScreenY <= _Pos.Y)
 	{

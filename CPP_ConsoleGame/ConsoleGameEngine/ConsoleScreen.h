@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include <vector>
 
 #include "EngineDebug.h"
@@ -24,7 +25,7 @@ public:
 
 	void SetChar(const class ConsoleObject& _Object);
 	void SetChar(const class ConsoleObject* _Object);
-	void SetChar(const Point _Pos, wchar_t _Char);
+	void SetChar(const Point _Pos, char _Char);
 
 	inline int GetScreenX() const
 	{
@@ -42,6 +43,6 @@ private:
 	int ScreenX = -1;
 	int ScreenY = -1;
 
-	std::vector<std::vector<wchar_t>> ScreenData;
+	std::vector<std::string> ScreenData;
 };
 
