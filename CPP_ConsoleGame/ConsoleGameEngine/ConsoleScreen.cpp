@@ -88,12 +88,12 @@ void ConsoleScreen::ClearScreen()
 
 void ConsoleScreen::SetChar(const ConsoleObject& _Object)
 {
-	
+	SetChar(_Object.GetPos(), _Object.GetRenderChar());
 }
 
 void ConsoleScreen::SetChar(const ConsoleObject* _Object)
 {
-
+	SetChar(_Object->GetPos(), _Object->GetRenderChar());
 }
 
 void ConsoleScreen::SetChar(const Point _Pos, char _Char)
