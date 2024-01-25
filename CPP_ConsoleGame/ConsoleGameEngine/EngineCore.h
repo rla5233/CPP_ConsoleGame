@@ -8,6 +8,7 @@
 
 class EngineCore
 {
+	// 충돌체크를 위해 ConsoleObject에 friend를 선언했다.
 	friend class ConsoleObject;
 public:
 	// constructor destructor
@@ -70,7 +71,8 @@ public:
 		return GetUpdateGroup(static_cast<int>(_Order));
 	}
 
-	// 보통 엄청 무거운 함수가 된다.
+	// 보통 엄청 무거운 함수가 된다. -> 새 리스트가 만들어지기 때문에
+	// 따라서 필요한 클래스에 friend를 사용하는 방법이 있다.
 	std::list<ConsoleObject*> GetUpdateGroup(int _Order = 0)
 	{
 		return AllUpdateObject[_Order];
