@@ -14,13 +14,16 @@ EngineCore::~EngineCore()
 
 void EngineCore::Init(Point _ScreenSize)
 {
-	LeakCheak;
-
 	Screen.CreateScreen(_ScreenSize.X, _ScreenSize.Y);
 	srand(static_cast<unsigned int>(time(0)));
 }
 
-void EngineCore::EngineStart()
+void EngineCore::Start()
+{	
+	Tick();
+}
+
+void EngineCore::Tick()
 {
 	while (EngineUpdate)
 	{
@@ -92,7 +95,7 @@ void EngineCore::EngineStart()
 					if (Object->IsDeath())
 					{
 						iter = ObjectList.erase(iter);
-					}		
+					}
 					else
 					{
 						++iter;
@@ -130,6 +133,11 @@ void EngineCore::EngineStart()
 		}
 	}
 
+	End();
+}
+
+void EngineCore::End()
+{
 	// 엔진 종료시
 	for (std::pair<const int, std::list<ConsoleObject*>>& Order : AllUpdateObject)
 	{
@@ -144,7 +152,7 @@ void EngineCore::EngineStart()
 			}
 		}
 	}
-		
+
 	AllUpdateObject.clear();
 
 	for (std::pair<const int, ConsoleUpdater*>& Order : AllManager)

@@ -22,11 +22,12 @@ public:
 	EngineCore& operator=(EngineCore&& _Other) noexcept = delete;
 	/////////////////////////////////////////////////////////////
 	void Init(Point _ScreenSize);
-	void EngineStart();
-	void EngineEnd()
-	{
-		EngineUpdate = false;
-	}
+	virtual void Start();
+	virtual void Tick();
+	virtual void End();
+	//{
+	//	EngineUpdate = false;
+	//}
 
 	template<typename ObjectType, typename EnumType>
 	ObjectType* CreateObject(EnumType _Order)
@@ -92,3 +93,11 @@ private:
 	bool EngineUpdate = true;
 };
 
+#define ENGINESTART(SCREENSIZE_X, SCREENSIZE_Y) \
+int main() \
+{ \
+	LeakCheak; \
+	EngineCore EngineCore; \
+	EngineCore.Init({ SCREENSIZE_X, SCREENSIZE_Y }); \
+	EngineCore.Start(); \
+}
