@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleGameEngine", "Consol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{87637F94-CDB1-4482-9B23-3AFCD5B33F64}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Console_Helltaker", "Console_Helltaker\Console_Helltaker.vcxproj", "{042D6C43-45DE-4792-85E6-C505098F976C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,21 +27,21 @@ Global
 		{F37F9EE7-4741-4620-8D7C-9D6A21F2E45E}.Release|x64.Build.0 = Release|x64
 		{F37F9EE7-4741-4620-8D7C-9D6A21F2E45E}.Release|x86.ActiveCfg = Release|Win32
 		{F37F9EE7-4741-4620-8D7C-9D6A21F2E45E}.Release|x86.Build.0 = Release|Win32
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Debug|x64.ActiveCfg = Debug|x64
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Debug|x64.Build.0 = Debug|x64
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Debug|x86.ActiveCfg = Debug|Win32
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Debug|x86.Build.0 = Debug|Win32
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Release|x64.ActiveCfg = Release|x64
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Release|x64.Build.0 = Release|x64
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Release|x86.ActiveCfg = Release|Win32
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C}.Release|x86.Build.0 = Release|Win32
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Debug|x64.ActiveCfg = Debug|x64
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Debug|x64.Build.0 = Debug|x64
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Debug|x86.ActiveCfg = Debug|Win32
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Debug|x86.Build.0 = Debug|Win32
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Release|x64.ActiveCfg = Release|x64
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Release|x64.Build.0 = Release|x64
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Release|x86.ActiveCfg = Release|Win32
+		{042D6C43-45DE-4792-85E6-C505098F976C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F37F9EE7-4741-4620-8D7C-9D6A21F2E45E} = {1F7C3AF7-553D-4F57-8B1B-A57BA1338E27}
-		{FAD23CC0-8C4F-439A-8CDD-B261D21DE51C} = {87637F94-CDB1-4482-9B23-3AFCD5B33F64}
+		{042D6C43-45DE-4792-85E6-C505098F976C} = {87637F94-CDB1-4482-9B23-3AFCD5B33F64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14D6AEF7-A994-4B4F-BD64-599625B468B7}
