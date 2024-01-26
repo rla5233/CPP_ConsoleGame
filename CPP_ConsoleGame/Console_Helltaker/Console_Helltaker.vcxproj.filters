@@ -4,10 +4,36 @@
     <Filter Include="App">
       <UniqueIdentifier>{c57c82a7-0801-4362-8861-9f857bf827e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b2039ef8-a6a0-4230-8ced-3f025985a8ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{01b34c18-c566-46c2-8a00-a43533bf4ee4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
       <Filter>App</Filter>
     </ClCompile>
+    <ClCompile Include="ContentsCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContentsCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

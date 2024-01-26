@@ -1,3 +1,3 @@
 #include "ContentsCore.h"
 
-ENGINESTART(15, 15);
+ENGINESTART(30, 20);
